@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    font-size: 16px;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container h1{
+    margin-bottom: 20px;
+}
+
+#logo{
+    font-weight: 700;
+    text-decoration: none;
+}
+.gradeMasterMain{
+    padding: 40px;
+    border: 5px solid #221d1d8f;
+    width: 500px;
+    border-radius: 5px;
+}
+
+.gradeMasterMain p{
+    font-size: 16px;
+}
+
+#result{
+    margin: 10px 0 10px 0;
+    color: #ff0404;
+    text-align: center;
+    font-size: 25px;
+}

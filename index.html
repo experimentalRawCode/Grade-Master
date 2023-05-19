@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Grade Master</title>
+
+  <!-- Raw CSS Link -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+  
+</head>
+<body>
+  <div class="container">
+      <div class="gradeMasterMain">
+        <a href="" id="logo">
+          <h1 class="text-center">Grade Master</h1>
+        </a>
+  
+        <p>Enter Your Number</p>
+        <input class="form-control my-3 p-3" placeholder="Number, You have got" id="inputNumber" type="number" required>
+        <button class="btn btn-success col-12" onclick="checkPassOrFail()">Evaluate</button>
+        
+        <p id="result"> -------- </p>
+    </div>
+
+  </div>
+
+<!-- Internal JS -->
+  <script>
+
+    function checkPassOrFail() {
+      // Get the input value
+      var inputNumber = parseInt(document.getElementById("inputNumber").value);
+      
+    if(inputNumber >= 80 && inputNumber <= 100){
+        document.getElementById("result").innerHTML = "You Got A+!";
+    }else if(inputNumber >= 70 && inputNumber <= 79){
+        document.getElementById("result").innerHTML = "You Got A";
+    }else if(inputNumber >= 60 && inputNumber <= 69){
+        document.getElementById("result").innerHTML = "You Got A-";
+    }else if(inputNumber >= 50 && inputNumber <= 59){
+        document.getElementById("result").innerHTML = "You Got B";
+    }else if(inputNumber >= 45 && inputNumber <= 49){
+        document.getElementById("result").innerHTML = "You Got B-";
+    }else if(inputNumber >= 33 && inputNumber <= 44){
+        document.getElementById("result").innerHTML = "You Got C";
+    }else if(inputNumber >= 0 && inputNumber <= 32){
+        document.getElementById("result").innerHTML = "Failed!";
+    }else if(inputNumber > 100){
+        document.getElementById("result").innerHTML = "FullMark is 100!";
+    }else if(inputNumber < 0){
+        document.getElementById("result").innerHTML = "The given number is a negative value.";
+    }
+    }
+
+    const logo = document.getElementById('logo');
+
+      logo.addEventListener('click', function() {
+        location.reload();
+      });
+  </script>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>
