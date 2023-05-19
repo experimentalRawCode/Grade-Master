@@ -32,7 +32,7 @@ Ensure that you are entering only positive numeric values within the range of 0 
 * JavaScript
 
 ## Live Site 🌐
-You can access the live site of Grade Master by visiting (https://www.grademaster.com.) 🚀
+You can access the live site of Grade Master by clicking on [Live Site](https://experimentalrawcode.github.io/Grade-Master/) 🚀
 
 ## Contact 📧
 If you have any questions or need assistance, please contact us at tushim14@gmail.com
